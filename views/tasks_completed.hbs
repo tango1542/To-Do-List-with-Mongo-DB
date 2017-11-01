@@ -1,0 +1,8 @@
+<div class = "tasklist">
+  {{#each tasks}}
+  <p>{{@index}}: <a href="task/{{this._id}}">{{this.text}}</a></p>
+    <li>{{this.text}} is completed</li>
+    {{else}}
+      <P>No tasks have been completed!</P>
+      {{/each}}
+    </div>
